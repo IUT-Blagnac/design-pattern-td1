@@ -159,6 +159,26 @@ public class Colvert extends Canard {
 }
 --------
 
+To launch the tests on this code, try:
+
+[source,shell]
+----
+mvn test
+----
+
+[NOTE]
+====
+The tests should fail, and your auto-grading, from your previous commit should not be full. 
+Check your last commit on your repo:
+
+.Access to your commit status
+image::check.png[]
+
+.Get details on faillure
+image::autograding.png[]
+====
+
+
 //----------------------------- Question ------------------
 .*TODO*:
 [WARNING]
@@ -178,8 +198,13 @@ mvn install
 .pass:[<i class="fa fa-github"></i>] commit/push
 [source,shell]
 ....
-fix #1.1 First draft of SuperCanard
+fix #1.1 First (running) draft of SuperCanard
 ....
++
+- [ ] Check again your commmit on your repo:
++
+.Get details on success :-)
+image::autogradingOK.png[width=80%]
 ====
 
 IMPORTANT: Take some time to check how the tests are organized.
