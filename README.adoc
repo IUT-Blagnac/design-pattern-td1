@@ -42,7 +42,7 @@ TD1 initial code.
 This is a template for the students' assignments.
 
 //------------------------------------ 
-== Assignement info
+== Assignment info
 
 {lastName}:: BRUEL
 {firstName}:: Jean-Michel
@@ -113,7 +113,7 @@ endif::[]
 
 [NOTE]
 =====
-This TD exercice is inspired from the excellent https://www.oreilly.com/library/view/head-first-design/0596007124/[book]: "Head First: Design Pattern.
+This TD exercise is inspired from the excellent https://www.oreilly.com/library/view/head-first-design/0596007124/[book]: "Head First: Design Pattern.
 Bert Bates, Eric Freeman, Elisabeth Freeman, Kathy Sierra. Editions O'Reilly. 2005."
 
 image::headFirst.jpg[link="https://www.oreilly.com/library/view/head-first-design/0596007124/",width=40%]
@@ -174,7 +174,7 @@ Check your last commit on your repo:
 .Access to your commit status
 image::check.png[]
 
-.Get details on faillure
+.Get details on failure
 image::autograding.png[]
 ====
 
@@ -201,7 +201,7 @@ mvn install
 fix #1.1 First (running) draft of SuperCanard
 ....
 +
-- [ ] Check again your commmit on your repo:
+- [ ] Check again your commit on your repo:
 +
 .Get details on success :-)
 image::autogradingOK.png[width=80%]
@@ -272,7 +272,7 @@ The first solution that comes to your mind is simple: redefine the `voler()` met
 .pass:[<i class="fa fa-github"></i>] commit/push
 [source,shell]
 ....
-fix #1.4 Fixing the non flying ducks
+fix #1.4 Fixing the non-flying ducks
 ....
 ====
 
@@ -330,8 +330,7 @@ What are the two main things that vary in your code?
 
 ==== Implementing behaviors
 
-Let's try to implement behavior differently, so that they
-are separated from the rest of the code.
+Let's try to implement behavior differently so that they are separated from the rest of the code.
 For that we will use another good principle:
 
 [NOTE]
@@ -410,8 +409,7 @@ image::google-strategy.png[link="images/google-strategy.png"]
 //----------------------------- Question ------------------
 [WARNING]
 ====
-You are asked to rework an application where only the
-following model was produced (sorry again for the damn French):
+You are asked to rework an application where only the following model was produced (sorry again for the damn French):
 
 image::aventure-sujet.png[link="images/aventure-sujet.png"]
 
