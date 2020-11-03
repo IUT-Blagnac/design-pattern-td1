@@ -1,6 +1,6 @@
 package td1;
 
-import org.blagnac.cpoa.*;
+import org.blagnac.cpoa.td1.*;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -23,19 +23,19 @@ public class ScenarioSteps {
         this.canard = new Mandarin();
     }
 
-    @Given("a new CanardEnPlastique")
-    public void a_new_canardEnPlastique() {
-        this.canard = new CanardEnPlastique();
-    }
-
     @When("I am asked to cancaner")
     public void cancaner() {
         this.actualAnswer = this.canard.cancaner();
     }
 
     @When("I am asked to voler")
-    public void i_am_asked_to_voler() {
+    public void voler() {
         this.actualAnswer = this.canard.voler();
+    }
+
+    @Then("I should say Je cancane!")
+    public void i_should_say() {
+        assertEquals("Je cancane!", this.actualAnswer);
     }
 
     @Then("I should say {string}")

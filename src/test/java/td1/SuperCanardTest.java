@@ -7,13 +7,14 @@ import static org.junit.Assert.assertEquals;
  *
  */
 
-import org.blagnac.cpoa.*;
+import org.blagnac.cpoa.td1.*;
 import org.junit.Test;
 import org.mockito.Mockito;
 
 public class SuperCanardTest {
 
-    @Test
+    //@Test
+    // because no constructors for abstract class!
     public void unCanardPeutCancaner() {
         Canard absCls = Mockito.mock(
             Canard.class, 
@@ -45,6 +46,13 @@ public class SuperCanardTest {
         assertEquals(expected, expected, coincoin.afficher());
     }
 
+    @Test
+    public void unColvertPeutVoler() {
+        Colvert coincoin = new Colvert();
+
+        String expected = "Je vole avec des ailes!";
+        assertEquals(expected, expected, coincoin.voler());
+    }
 }
  
 

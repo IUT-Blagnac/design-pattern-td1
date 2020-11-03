@@ -1,4 +1,4 @@
-Feature: Chanter comme un Canard
+Feature: Se comporter comme un Canard
   Everybody wants to sing like a duck
 
   Scenario: Cancanner comme un colvert
@@ -19,14 +19,22 @@ Feature: Chanter comme un Canard
   Examples:
   # |-----------------------------------------------------
     | duckClass                          | answer        |
-  # |----------------------------------------------------
-    | org.blagnac.cpoa.Colvert           | Je cancane!   |
-    | org.blagnac.cpoa.Mandarin          | Je cancane!   |
-    | org.blagnac.cpoa.CanardEnPlastique | Je cancane!   |
+   # |----------------------------------------------------
+   | org.blagnac.cpoa.td1.Colvert            | Je cancane!   |
+    | org.blagnac.cpoa.td1.Mandarin          | Je cancane!   |
+    | org.blagnac.cpoa.td1.CanardEnPlastique | Je cancane!   |
   # |-----------------------------------------------------
 
-  Scenario Outline: Un CanardEnPlastique ne vole pas !
-    Given a new CanardEnPlastique
+  Scenario Outline: Voler comme un canard
+    Given a new "<duckClass>"
     When I am asked to voler
-    Then I should say "I can't!"
+    Then I should say "<answer>"
 
+  Examples:
+  # |----------------------------------------------------------------
+    | duckClass                          | answer                    |
+  # |----------------------------------------------------------------
+    | org.blagnac.cpoa.td1.Colvert           | Je vole avec des ailes!   |
+    | org.blagnac.cpoa.td1.Mandarin          | Je vole avec des ailes!   |
+    | org.blagnac.cpoa.td1.CanardEnPlastique |                           |
+  # |----------------------------------------------------------------
