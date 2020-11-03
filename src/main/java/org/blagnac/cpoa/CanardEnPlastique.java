@@ -13,4 +13,11 @@ public class CanardEnPlastique extends Canard {
 		return info;
 	}
 
+	@Override
+	public String voler() {
+		String info = "I can't!";
+		System.out.println(info);
+		return info;	
+	}
+
 }

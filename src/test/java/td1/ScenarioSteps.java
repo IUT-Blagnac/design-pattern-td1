@@ -23,14 +23,19 @@ public class ScenarioSteps {
         this.canard = new Mandarin();
     }
 
+    @Given("a new CanardEnPlastique")
+    public void a_new_canardEnPlastique() {
+        this.canard = new CanardEnPlastique();
+    }
+
     @When("I am asked to cancaner")
     public void cancaner() {
         this.actualAnswer = this.canard.cancaner();
     }
 
-    @Then("I should say Je cancane!")
-    public void i_should_say() {
-        assertEquals("Je cancane!", this.actualAnswer);
+    @When("I am asked to voler")
+    public void i_am_asked_to_voler() {
+        this.actualAnswer = this.canard.voler();
     }
 
     @Then("I should say {string}")
@@ -43,7 +48,5 @@ public class ScenarioSteps {
         Class classTemp = Class.forName(string);
         Object obj = classTemp.newInstance();
         this.canard = (Canard)obj;
-        //this.canard = new Canard(classTemp.newInstance();
-        // this.canard = new classTemp();
     }
 }

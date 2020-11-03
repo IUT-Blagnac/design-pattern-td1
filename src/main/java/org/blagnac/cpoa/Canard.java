@@ -18,5 +18,11 @@ abstract public class Canard {
 }
 
 	abstract public String afficher();
-	
+
+	public String voler() {
+		String info = "Je vole comme un Canard!";
+		System.out.println(info);
+		return info;	
+	}
+
 }

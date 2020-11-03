@@ -24,3 +24,9 @@ Feature: Chanter comme un Canard
     | org.blagnac.cpoa.Mandarin          | Je cancane!   |
     | org.blagnac.cpoa.CanardEnPlastique | Je cancane!   |
   # |-----------------------------------------------------
+
+  Scenario Outline: Un CanardEnPlastique ne vole pas !
+    Given a new CanardEnPlastique
+    When I am asked to voler
+    Then I should say "I can't!"
+
